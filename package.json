@@ -6,14 +6,21 @@
     "fusion-cli": "^1.8.5",
     "fusion-core": "^1.4.1",
     "fusion-plugin-react-helmet-async": "^1.0.0",
+    "fusion-plugin-react-redux": "^1.0.8",
     "fusion-plugin-react-router": "^1.1.3",
+    "fusion-plugin-rpc-redux-react": "^2.0.0",
     "fusion-plugin-styletron-react": "^2.5.1",
+    "fusion-plugin-universal-events": "^1.0.5",
     "fusion-react": "^1.1.0",
     "fusion-tokens": "^1.0.4",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "styletron-react": "^4.3.5"
+    "react-redux": "^5.0.7",
+    "reduce-reducers": "^0.4.3",
+    "redux": "^4.0.0",
+    "styletron-react": "^4.3.5",
+    "unfetch": "^3.1.1"
   },
   "scripts": {
     "dev": "fusion dev",
