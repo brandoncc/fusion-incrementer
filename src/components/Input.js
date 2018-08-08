@@ -4,7 +4,8 @@ import React from 'react';
 import {styled} from 'fusion-plugin-styletron-react';
 import {compose} from 'redux';
 import {connect} from 'react-redux';
-import {withRPCRedux} from 'fusion-plugin-rpc-redux-react';
+
+import {increment, decrement} from '../redux/reactors';
 
 const CurrentValue = styled('span', {
   marginRight: '20px'
@@ -19,8 +20,8 @@ const Input = ({value, increment, decrement}) => (
 );
 
 const hoc = compose(
-  withRPCRedux('increment'),
-  withRPCRedux('decrement'),
+  increment,
+  decrement,
   connect(({value}) => ({value}))
 )
 
