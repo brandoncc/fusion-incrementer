@@ -5,7 +5,7 @@ const increment = (state = 0, action) => {
   if (action.type === 'INCREMENT_START') {
     return state;
   } else if (action.type === 'INCREMENT_SUCCESS') {
-    return action.payload.value + 1;
+    return action.payload.value;
   } else if (action.type === 'INCREMENT_FAILURE') {
     return state;
   } else {
@@ -15,7 +15,7 @@ const increment = (state = 0, action) => {
 
 const decrement = createRPCReducer('decrement', {
   start: state => state,
-  success: (_state, action) => action.payload.value - 1,
+  success: (_state, action) => action.payload.value,
   failure: state => state
 }, 0)
 
